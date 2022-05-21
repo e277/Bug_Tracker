@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+header {
+   height: 100vh;
+   background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/images/bg.jpg');
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 80%;
+   margin: 0 auto;
+}
+.links {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.links a {
+   text-decoration: none;
+   padding: 15px 25px;
+   color: white;
+   transition: 1s all ease;
+}
+.links a:hover {
+   background-color: white;
+   color: black;
+}
+.intro {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+}
+.intro h1 {
+   letter-spacing: 1.5px;
+}
+.intro span {
+   color: greenyellow;
+}
+.intro a {
+   display: inline-block;
+   color: greenyellow;
+   padding: 5px 0;
+   transition: 500ms ease;
+}
+.intro a:hover {
+   font-size: 1.2em;
+}
+
+/* Body */
+section {
+   padding: 100px 0;
+   margin: 0 auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+h3 #about,
+h3 #contact {
+   letter-spacing: 1.5px;
+   
+}
+h3 span {
+   color: greenyellow;
+}
+
+.about {
+   background-color: rgb(209, 209, 209);
+}
+.footer {
+   color: white;
+   text-align: center;
+   font-size: 1.2em;
+   padding: 20px 0;
+   background-color: rgba(0,0,0,0.6);
+}
+
+
+/* arrow */
+.arrow{
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	width: 40px;
+	height: 40px;
+	line-height: 50px;
+	text-align: center;
+	cursor: pointer;
+	background: greenyellow;
+	border-radius: 50%;
+	scroll-behavior: smooth;
+}
+
+.arrow img{
+	width: 20px;
+	height: 20px;
+	z-index: 1;
+}
